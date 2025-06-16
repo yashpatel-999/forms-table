@@ -1,0 +1,30 @@
+.taskBlock,.assigneeBlock,.progressBlock{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.container{
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.button{
+  height:40px;
+  width: 100px;
+  background-color: rgba(118, 0, 0, 0.365);
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+.valuetable{
+  width: 100%;
+}
+.edbtn{
+  height: 30px;
+  width: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(118, 0, 0, 0.365);
+  color: white;
+}

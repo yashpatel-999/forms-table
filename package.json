@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:form-task": "node dist/form-task/server/server.mjs"
+    "serve:ssr:form-task": "node dist/form-task/server/server.mjs",
+    "json-server": "json-server --watch db.json --port 3000"
   },
   "private": true,
   "dependencies": {
