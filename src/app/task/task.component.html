@@ -1,0 +1,46 @@
+<div class="container">
+<div class="taskBlock">
+  <label>Task Name:</label>
+  <input type="text" [(ngModel)]="taskForm.taskName" placeholder="Enter task name" />
+</div>
+<div class="assigneeBlock">
+<label>Assignee:</label>
+<input type="text" [(ngModel)]="taskForm.assignee" placeholder="Enter assignee name" />
+</div>
+<div class="progressBlock">
+<label>Status:</label>
+<select [(ngModel)]="taskForm.status" name="status">
+  <option value="Not Yet Started">Not Yet Started</option>
+  <option value="Inprogress">Inprogress</option>
+  <option value="Completed">Completed</option>
+</select>
+</div>
+<button class="button" (click)="addOrUpdateTask()">
+  {{ taskForm.id ? 'Update Task' : 'Add Task' }}
+</button>
+</div>
+
+
+<div class="valuetable">
+  <table class="table text-center table-striped">
+  <thead>
+    <tr >
+      <th scope="col">Task Name</th>
+      <th scope="col">Assignee</th>
+      <th scope="col">Status</th>
+      <th scope="col">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let task of tasks">
+    <td>{{task.taskName}}</td>
+    <td>{{task.assignee}}</td>
+    <td>{{task.status}}</td>
+    <td>
+      <button class="edbtn" (click)="editTask(task)"><i class="bi bi-pencil-square"></i></button>
+      <button class="edbtn" (click)="deleteTask(task.id!)"><i class="bi bi-trash"></i></button>
+    </td>
+   </tr>
+  </tbody>
+</table>
+</div>

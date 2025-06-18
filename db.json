@@ -1,16 +1,10 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "taskName": "bootstrap",
+      "id": "f5d1",
+      "taskName": "meeting with actlogica",
       "assignee": "Yash",
-      "status": "Inprogress"
-    },
-    {
-      "id": "a213",
-      "taskName": "javaScript",
-      "assignee": "lp",
-      "status": "Inprogress"
+      "status": "Not Yet Started"
     }
   ]
 }
